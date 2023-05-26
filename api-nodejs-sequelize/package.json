@@ -1,0 +1,23 @@
+{
+  "name": "api-nodejs-sequelize",
+  "version": "1.0.0",
+  "description": "REST API nodeJS, sequelize OMR, mysql Data Base. ",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon src/main.js",
+    "dev": "nodemon src/main.js"
+  },
+  "author": "gg_developer",
+  "license": "ISC",
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "sequelize-cli": "^6.6.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql2": "^3.3.2",
+    "sequelize": "^6.31.1"
+  }
+}
