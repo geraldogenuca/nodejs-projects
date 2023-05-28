@@ -29,6 +29,7 @@ module.exports = {
   },
   async create(req, res) {
     try {
+      console.log(req.file)
       const products = await Products.create(req.body);
 
       const response = {

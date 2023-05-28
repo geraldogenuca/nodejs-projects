@@ -14,7 +14,11 @@ Products.init(
         price: {
             type: DataTypes.FLOAT,
             allowNull: false,
-        },
+        },        
+        image:{
+            type: DataTypes.STRING,
+            allowNull: true,
+        }        
     },
     {
         sequelize,

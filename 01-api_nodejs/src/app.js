@@ -6,6 +6,7 @@ const app = express()
 
 const ProductRoute = require('./routes/product.route')
 const OrderRoute = require('./routes/order.route')
+const UserRoute = require('./routes/users.route')
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: false}))
@@ -29,6 +30,7 @@ app.use((req, res, next) => {
 // 
 app.use('/products', ProductRoute)
 app.use('/orders', OrderRoute)
+app.use('/users', UserRoute)
 
 // Error routes not found
 app.use((req, res, next) => {

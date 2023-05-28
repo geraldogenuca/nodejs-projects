@@ -18,6 +18,10 @@ module.exports = {
         type: Sequelize.FLOAT,
         allowNull: false,
       },
+      image : {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
       created_at: {
         type: Sequelize.DATE,
         allowNull: false,
